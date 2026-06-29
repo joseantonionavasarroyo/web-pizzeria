@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f6f0;
+    color: #222222;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    padding: auto;
+    padding: 20px 5%;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2b4c3f;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover{
+    color: #d64527;
+}
+
+.hero{
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), /* Arriba: Negro con 40% de opacidad (transparente) */
+        rgba(0, 0, 0, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200);
+    height: 60vh;
+
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1{
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    margin-bottom: 40px;
+}
+
+.btn-principal{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #c82333;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-principal:hover{
+    transform: scale(1.05);
+}
+
+#menu {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+#menu h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2b4c3f;
+}
+
+.contenedor-pizzas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.post{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: left;
+}
+
+.imagen_post {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.post-info {
+    padding: 20px;
+}
+
+.post-info h3 {
+    margin-bottom: 10px;
+}
+
+.post-info p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    height: 45px; /* Altura fija para que todas las descripciones ocupen lo mismo */
+}
+
+.precio {
+    font-weight: bold;
+    color: #d64527;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.seccion-reserva{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #C9C5B1;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.seccion-reserva h2{
+    margin-bottom: 10px;
+}
+
+.seccion-reserva form{
+    margin-bottom: 10px;
+}
+
+
+.oculto {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-out;
+}
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .contenedor-pizzas {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

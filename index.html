@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Bella Napoli</div>
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#reserva">Reservar</a>
+        </nav>
+        <button id="btn-modo">🌙</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pizzería Artesanal Bella Napoli</h1>
+            <p>Disfruta de la verdadera pizza napolitana, cocinada en horno de leña con ingredientes 100% DOP.</p>
+            <a href="#menu" class="btn-principal">Ver Menú</a>
+        </div>
+    </section>
+
+    <main id="menu">
+        <h2>Nuestro Menú Estrella</h2>
+        
+        <section class="contenedor-pizzas">
+            
+            <article class="post oculto">
+                <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg" alt="Pizza Margherita" class="imagen_post">
+                <div class="post-info">
+                    <h3>Margherita DOP</h3>
+                    <p>Tomate San Marzano, Mozzarella di Bufala, Albahaca fresca, AOVE.</p>
+                    <span class="precio">12.50€</span>
+                </div>
+            </article>
+
+            <article class="post oculto">
+                <img src="https://cdn.gutekueche.ch/media/recipe/25107/conv/pizza-prosciutto-default.jpg" alt="Pizza Prosciutto" class="imagen_post">
+                <div class="post-info">
+                    <h3>Prosciutto e Funghi</h3>
+                    <p>Nuestra base clásica con Jamón York artesanal y champiñones frescos.</p>
+                    <span class="precio">14.00€</span>
+                </div>
+            </article>
+
+            <article class="post oculto">
+                <img src="https://pizzeriaalgustotapas.es/wp-content/uploads/2022/09/Pizza-Diavola.jpg" alt="Pizza Diavola" class="imagen_post">
+                <div class="post-info">
+                    <h3>Diavola Picante</h3>
+                    <p>Para los valientes: Salame picante de Calabria, Nduja y peperoncino.</p>
+                    <span class="precio">15.50€</span>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <section id="reserva" class="seccion-reserva">
+        <h2>Reserva tu Mesa</h2>
+        <form id="formulario-contacto">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre Completo" required>
+            <input type="date" id="fecha" name="fecha" required>
+            <input type="number" id="personas" name="personas" placeholder="Nº de Personas" min="1" max="10" required>
+            <button type="submit">Solicitar Reserva</button>
+        </form>
+        <p id="mensaje-error" class="oculto">Por favor, rellena todos los campos correctamente.</p>
+    </section>
+
+    <footer>
+        <p>Bella Napoli Pizzeria - Calle Falsa 123, Tu Ciudad</p>
+        <p>Horario: Mar-Dom 13:00-16:00 | 20:00-23:30</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
