@@ -26,3 +26,31 @@ const pizzas=document.querySelectorAll(".post");
 pizzas.forEach(pizza => {
     observador.observe(pizza);   
 });
+
+//logica filtros
+const filtros=document.querySelectorAll(".filtro");
+
+filtros.forEach(boton => {
+    boton.addEventListener("click", function() {
+        let id=boton.dataset.filtro;
+
+        document.startViewTransition(() => {
+
+            pizzas.forEach(pizza => {
+                if(id==="todas"){
+                    if(pizza.classList.contains("ocultar-filtro")){
+                        pizza.classList.remove("ocultar-filtro");
+                    }
+                }else{
+                    if(pizza.dataset.categoria!=id){
+                        pizza.classList.add("ocultar-filtro");
+                    }else{
+                        if(pizza.classList.contains("ocultar-filtro")){
+                            pizza.classList.remove("ocultar-filtro");
+                        }
+                    }
+                }
+            });
+        });
+    });
+});

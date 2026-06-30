@@ -27,10 +27,13 @@
 
     <main id="menu">
         <h2>Nuestro Menú Estrella</h2>
-        
+
+        <button data-filtro="todas" class="filtro">Todas</button>
+        <button data-filtro="clasica" class="filtro">Clásica</button>
+        <button data-filtro="picante" class="filtro">Picante</button>
         <section class="contenedor-pizzas">
             
-            <article class="post oculto">
+            <article class="post oculto" data-categoria="clasica">
                 <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg" alt="Pizza Margherita" class="imagen_post">
                 <div class="post-info">
                     <h3>Margherita DOP</h3>
@@ -39,7 +42,7 @@
                 </div>
             </article>
 
-            <article class="post oculto">
+            <article class="post oculto" data-categoria="clasica">
                 <img src="https://cdn.gutekueche.ch/media/recipe/25107/conv/pizza-prosciutto-default.jpg" alt="Pizza Prosciutto" class="imagen_post">
                 <div class="post-info">
                     <h3>Prosciutto e Funghi</h3>
@@ -48,7 +51,7 @@
                 </div>
             </article>
 
-            <article class="post oculto">
+            <article class="post oculto" data-categoria="picante">
                 <img src="https://pizzeriaalgustotapas.es/wp-content/uploads/2022/09/Pizza-Diavola.jpg" alt="Pizza Diavola" class="imagen_post">
                 <div class="post-info">
                     <h3>Diavola Picante</h3>

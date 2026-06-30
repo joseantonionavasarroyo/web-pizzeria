@@ -115,6 +115,13 @@ header nav a:hover{
     gap: 30px;
 }
 
+.filtro{
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+}
+
 .post{
     background-color: white;
     border-radius: 10px;
@@ -181,6 +188,10 @@ header nav a:hover{
 .oculto {
     opacity: 0;
     transform: translateY(40px);
+}
+
+.ocultar-filtro{
+    display: none;
 }
 
 
