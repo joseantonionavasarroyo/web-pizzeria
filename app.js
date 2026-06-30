@@ -54,3 +54,23 @@ filtros.forEach(boton => {
         });
     });
 });
+
+//logica formulario
+const formulario=document.querySelector("#formulario-contacto");
+const nombre=document.querySelector("#nombre");
+const fecha=document.querySelector("#fecha");
+
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let nom=nombre.value;
+    let fech=fecha.value;
+    const mensajeConf=document.querySelector("#mensaje-error");
+
+    if (nom.length===0 || new Date(fech)<new Date()){
+        mensajeConf.classList.remove("oculto");
+    }else{
+        alert("Confirmada");
+        formulario.reset();
+    }
+});
