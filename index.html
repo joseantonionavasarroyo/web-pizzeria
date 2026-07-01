@@ -15,6 +15,7 @@
             <a href="#reserva">Reservar</a>
         </nav>
         <button id="btn-modo">🌙</button>
+        <span id="total-pedido">Total: 0.00€</span>
     </header>
 
     <section class="hero">
@@ -33,30 +34,33 @@
         <button data-filtro="picante" class="filtro">Picante</button>
         <section class="contenedor-pizzas">
             
-            <article class="post oculto" data-categoria="clasica">
+            <article class="post oculto" data-categoria="clasica" data-precio="12.50">
                 <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg" alt="Pizza Margherita" class="imagen_post">
                 <div class="post-info">
                     <h3>Margherita DOP</h3>
                     <p>Tomate San Marzano, Mozzarella di Bufala, Albahaca fresca, AOVE.</p>
                     <span class="precio">12.50€</span>
+                    <button class="btn-agregar">Añadir al pedido ➕</button>
                 </div>
             </article>
 
-            <article class="post oculto" data-categoria="clasica">
+            <article class="post oculto" data-categoria="clasica" data-precio="14.00">
                 <img src="https://cdn.gutekueche.ch/media/recipe/25107/conv/pizza-prosciutto-default.jpg" alt="Pizza Prosciutto" class="imagen_post">
                 <div class="post-info">
                     <h3>Prosciutto e Funghi</h3>
                     <p>Nuestra base clásica con Jamón York artesanal y champiñones frescos.</p>
                     <span class="precio">14.00€</span>
+                    <button class="btn-agregar">Añadir al pedido ➕</button>
                 </div>
             </article>
 
-            <article class="post oculto" data-categoria="picante">
+            <article class="post oculto" data-categoria="picante" data-precio="15.50">
                 <img src="https://pizzeriaalgustotapas.es/wp-content/uploads/2022/09/Pizza-Diavola.jpg" alt="Pizza Diavola" class="imagen_post">
                 <div class="post-info">
                     <h3>Diavola Picante</h3>
                     <p>Para los valientes: Salame picante de Calabria, Nduja y peperoncino.</p>
                     <span class="precio">15.50€</span>
+                    <button class="btn-agregar">Añadir al pedido ➕</button>
                 </div>
             </article>
 

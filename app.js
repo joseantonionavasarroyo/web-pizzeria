@@ -74,3 +74,18 @@ formulario.addEventListener("submit", (event) => {
         formulario.reset();
     }
 });
+
+//logica carrito
+let total=0.00;
+
+const agregar=document.querySelectorAll(".btn-agregar");
+const pedidoPrecio=document.querySelector("#total-pedido");
+
+agregar.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const pizza=boton.closest(".post");
+        let precio=parseFloat(pizza.dataset.precio);
+        total=total+precio;
+        pedidoPrecio.textContent="Total: "+total.toFixed(2)+" €";
+    });
+});
